@@ -65,3 +65,25 @@ ul.topnav li.right {
 
 /* ====================================== END BARRE NAVIGATION ====================================== */
 
+header>div{
+  display: flex;
+  flex-direction: row;
+}
+
+
+#logo>img{
+  width: 10vw;
+}
+
+#logo{
+  width: fit-content;
+}
+
+.center{
+  margin: auto;
+  text-align: center;
+}
+
+header{
+  background-image: url(Img/snow.gif);
+}
