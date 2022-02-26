@@ -36,6 +36,36 @@
   <body id="main_page">
     <header>
 
+      <!--------------------------------------------------------METEO-------------------------------------------------------->
+
+
+      <a 
+      class="weatherwidget-io"
+      href="https://forecast7.com/en/62d7922d85/seinajoki/"
+      data-label_1="SEINÄJOKI"
+      data-label_2="WEATHER"
+      data-mode="Current"
+      data-theme="blue-mountains"
+      >SEINÄJOKI WEATHER</a
+    >
+ 
+    <script>
+      !(function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://weatherwidget.io/js/widget.min.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+      })(document, "script", "weatherwidget-io-js");
+    </script>
+
+
+<!--------------------------------------------------------END METEO-------------------------------------------------------->
+
+
 
     <!--------------------------------------------------------NAVBAR-------------------------------------------------------->
 
@@ -65,8 +95,76 @@
   
     </header>
 
+
+
+
+
     <main>
+      <div class="container">
+        <div class="card">
+          <div class="card__header">
+            <img src="Articles/Article1/miniature.jpg" alt="card__image" class="card__image" width="600">
+          </div>
+          <div class="card__body">
+            <span class="tag tag-blue">Technology</span>
+            <h4>What's new in 2022 Tech</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+          </div>
+          <div class="card__footer">
+            <div class="user">
+              <img src="https://i.pravatar.cc/40?img=1" alt="user__image" class="user__image">
+              <div class="user__info">
+                <h5>Jane Doe</h5>
+                <small>2h ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__header">
+            <img src="Articles/Article2/miniature.jpg"" alt="card__image" class="card__image" width="600">
+          </div>
+          <div class="card__body">
+            <span class="tag tag-brown">Food</span>
+            <h4>Delicious Food</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+          </div>
+          <div class="card__footer">
+            <div class="user">
+              <img src="https://i.pravatar.cc/40?img=2" alt="user__image" class="user__image">
+              <div class="user__info">
+                <h5>Jony Doe</h5>
+                <small>Yesterday</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__header">
+            <img src="Articles/Article4/miniature.png"" alt="card__image" class="card__image" width="600">
+          </div>
+          <div class="card__body">
+            <span class="tag tag-red">Automobile</span>
+            <h4>Race to your heart content</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+          </div>
+          <div class="card__footer">
+            <div class="user">
+              <img src="https://i.pravatar.cc/40?img=3" alt="user__image" class="user__image">
+              <div class="user__info">
+                <h5>John Doe</h5>
+                <small>2d ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+
+
+
+
+
 
 
     <!--------------------------------------------------------BEGIN FOOTER-------------------------------------------------------->
