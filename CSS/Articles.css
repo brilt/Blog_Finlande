@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
+
+
 *,
 *::before,
 *::after {
@@ -7,6 +9,14 @@
   padding: 0;
   margin: 0;
 }
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+
 
 body {
   font-family: "Quicksand", sans-serif;
@@ -33,10 +43,15 @@ img {
   object-fit: cover;
 }
 
+a:link, a:visited, a:hover, a:active{
+  text-decoration: none;
+  color: black;
+}
+
 .card {
   display: flex;
   flex-direction: column;
-  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  width: 21rem;
   overflow: hidden;
   box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 1em;
