@@ -23,35 +23,7 @@
 
     <header> 
 
-      <!--------------------------------------------------------METEO-------------------------------------------------------->
-
-
-      <a 
-      class="weatherwidget-io"
-      href="https://forecast7.com/en/62d7922d85/seinajoki/"
-      data-label_1="SEINÄJOKI"
-      data-label_2="WEATHER"
-      data-mode="Current"
-      data-theme="blue-mountains"
-      >SEINÄJOKI WEATHER</a
-    >
  
-    <script>
-      !(function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (!d.getElementById(id)) {
-          js = d.createElement(s);
-          js.id = id;
-          js.src = "https://weatherwidget.io/js/widget.min.js";
-          fjs.parentNode.insertBefore(js, fjs);
-        }
-      })(document, "script", "weatherwidget-io-js");
-    </script>
-
-
-<!--------------------------------------------------------END METEO-------------------------------------------------------->
-
 
       <!--------------------------------------------------------NAVBAR-------------------------------------------------------->
 
@@ -267,7 +239,25 @@
 
     <!--------------------------------------------------------END BODY-------------------------------------------------------->
 
+    <script>
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function() {myFunction()};
 
+      // Get the navbar
+      var navbar = document.getElementById("navbar");
+
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop;
+
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+      }
+    </script>
 
 
     <!--------------------------------------------------------BEGIN FOOTER-------------------------------------------------------->
