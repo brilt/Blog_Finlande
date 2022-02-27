@@ -6,3 +6,11 @@ article, h1{
 p{
 	text-align: justify;
 }
+
+img{
+	height: 20rem;
+}
+
+.Txt-Img {
+	display: flex;
+}
