@@ -107,6 +107,7 @@ img {
 
 .description {
   position: relative;
+  margin: auto;
 }
 
 .description span {
