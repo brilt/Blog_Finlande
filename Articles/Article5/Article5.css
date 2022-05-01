@@ -1,17 +1,26 @@
-article, h1{
+article, h1, h2{
 	padding-left: 5vw;
 	padding-right: 5vw;
 
 }
 
+.center{
+	display: flex;
+	text-align: center;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+}
 
 img{
 	height: 20rem;
 }
 
-.Txt-Img {
-	display: flex;
+
+.resize_img {
+	width: 20vw;
+	height: 30vw;
 }
+
 
 pre {
     white-space: pre-wrap;       /* Since CSS 2.1 */
