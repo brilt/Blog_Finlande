@@ -1,0 +1,39 @@
+article, h1, h2{
+	padding-left: 5vw;
+	padding-right: 5vw;
+
+}
+
+.center{
+	display: flex;
+	text-align: center;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+}
+
+img{
+	height: 20rem;
+}
+
+
+.resize_img {
+	width: 10vw;
+	height: auto;
+}
+
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+
+	text-align: justify;
+}
+
+strong{
+	font-size: 60px;
+	color: red;
+	background-color: yellow;
+}
