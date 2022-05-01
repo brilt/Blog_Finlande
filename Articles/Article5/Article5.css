@@ -1,22 +1,30 @@
-* { box-sizing: border-box;}
-body { font-size: 30px; padding: 0; margin: 0;}
-​
-.scrollHalf { position: relative}
-/*.scrollHalf__grupo { opacity: calc(1/(1+(var(--visible-y)*var(--visible-y)*var(--visible-y)*var(--visible-y)))); transition: all 200ms ease-in-out;}*/
+article, h1{
+	padding-left: 5vw;
+	padding-right: 5vw;
 
-​
-.scrollHalf__grupo {  transition: all 200ms ease-in-out; }
-.scrollHalf__grupo__imagen { overflow: hidden; }
-.scrollHalf__grupo__contenido { padding: 3rem;     }
-​
-​
-.scrollHalf__grupo[data-scroll="out"] { opacity: 0;}
-.scrollHalf__grupo[data-scroll="in"] { opacity: calc(var(--visible-y)*1.9);  }  
-​
-​
-@media screen and (min-width:900px) {
-  .scrollHalf__grupo { min-height: 100vh;}
-  .scrollHalf__grupo__imagen { position: fixed; top: 0; left: 0; width: 50vw;}
-  .scrollHalf__grupo__imagen img {  min-height: 100vh;  min-width: 50vw; }
-  .scrollHalf__grupo__contenido { margin: 0 3vw 0 52vw;}
+}
+
+
+img{
+	height: 20rem;
+}
+
+.Txt-Img {
+	display: flex;
+}
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+
+	text-align: justify;
+}
+
+strong{
+	font-size: 60px;
+	color: red;
+	background-color: yellow;
 }
